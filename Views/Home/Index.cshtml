@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<h1>Color List</h1>
+
+<ol>
+    @foreach (var color in (List<string>)ViewData["Colors"])
+    {
+        <li>@color</li>
+    }
+</ol>
+
